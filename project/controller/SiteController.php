@@ -57,4 +57,21 @@ class SiteController extends Controller
         );
     }
 
+    public function insert()
+    {
+        $value = 26;
+        $date = date('Y-m-d');
+
+        $sql = "INSERT INTO meta (met_fecCreacion,met_valor) VALUES (:date ,:value)";
+
+        $objConection = new Conection();
+        $objConection->query($sql);
+        $objConection->bind(':date', $date);
+        $objConection->bind(':value', $value);
+        if ($objConection->execute() == 1) {
+            return true;
+        }
+        return false;
+    }
+
 }

@@ -82,7 +82,11 @@ class Conection
      */
     public function execute()
     {
+//        if(count($arrData) > 0){
+//            return $this->stmt->execute($arrData);
+//        }
         return $this->stmt->execute();
+
     }
 
     /**
