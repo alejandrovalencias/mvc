@@ -13,7 +13,7 @@ class SiteController extends Controller
      * @version 1
      * @copyright alejandrov.net
      * @return \SiteController
-    @access public
+     * @access public
      */
     public function __construct()
     {
