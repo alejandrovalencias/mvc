@@ -29,5 +29,6 @@ function __autoload($className)
 
 // index.php?site=maria
 $controller = new SiteController();
-$controller->insert();
+$controller->update();
+//$controller->insert();
 //$controller->index();

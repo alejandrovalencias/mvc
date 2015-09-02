@@ -74,4 +74,25 @@ class SiteController extends Controller
         return false;
     }
 
+    public function update()
+    {
+        $value = 250;
+        $date = date('Y-m-d h:i:s');
+        $intId = 141;
+
+        $sql = "UPDATE meta
+                 SET met_fecCreacion=:date, met_valor=:value
+                 WHERE met_id=:id";
+
+        $objConection = new Conection();
+        $objConection->query($sql);
+        $objConection->bind(':date', $date);
+        $objConection->bind(':value', $value);
+        $objConection->bind(':id', $intId);
+        if ($objConection->execute() == 1) {
+            return true;
+        }
+        return false;
+    }
+
 }
