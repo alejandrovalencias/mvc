@@ -1,0 +1,48 @@
+
+
+    #newspaper-a {
+        border: 1px solid #6699CC;
+        border-collapse: collapse;
+        font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+        font-size: 12px;
+        margin: 20px;
+        text-align: left;
+        width: 480px;
+    }
+
+    #newspaper-a th {
+        border-bottom: 1px dashed #6699CC;
+        color: #003399;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 12px 17px;
+    }
+
+    #newspaper-a td {
+        color: #666699;
+        padding: 7px 17px;
+    }
+
+    #newspaper-a tbody tr:hover td {
+        background: none repeat scroll 0 0 #D0DAFD;
+        color: #333399;
+    }
+
+    .error{
+        color:red;
+    }
+    .normal{
+        color: #666699;
+    }
+    
+    .title{
+        text-align: center;
+    }
+    
+    .small{
+        font-size: 12px;
+    }
+    
+    .color-blue{
+        color:blue;
+    }
